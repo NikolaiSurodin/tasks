@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Перепишите один из примеров раздела Цепочка промисов, используя async/await вместо .then/catch:
+    // function loadJson(url) {
+    //     return fetch(url)
+    //         .then(response => {
+    //             if (response.status == 200) {
+    //                 return response.json();
+    //             } else {
+    //                 throw new Error(response.status);
+    //             }
+    //         })
+    // }
+    // async function loadJson(url) {
+    //     let response = await fetch(url)
+    //     if (response.status === 200) {
+    //         let json = await response.json()
+    //         return json
+    //     }
+    //     throw new Error(response.status)
+    // }
+    // loadJson('no-such-user.json')
+    //     .catch(alert); // Error: 404
+
+    //function expression
+    // let f = function (a) {
+    //     console.log('hello' + a)
+    // }
+    // f(2)
+
+    // function ask (ques, yes, no){
+    //     if(confirm(ques)) yes()
+    //     else no()
+    // }
+    // function showOk(){
+    //     alert('Вы огласны');
+    // }
+    // function showCancel(){
+    //     alert('Вы отменили');
+    // }
+    // ask("Вы согласны?" , showOk, showCancel)
+
+
+    // function ask(question, yes, no) {
+    //     if (confirm(question)) yes()
+    //     else no();
+    // }
+    //
+    // function showOk() {
+    //     alert( "Вы согласны." );
+    // }
+    //
+    // function showCancel() {
+    //     alert( "Вы отменили выполнение." );
+    // }
+    //
+    // // использование: функции showOk, showCancel передаются в качестве аргументов ask
+    // ask("Вы согласны?", showOk, showCancel);
+
+    function t() {
+        let a = 0
+        return  function () {
+            a = a + 1
+            return a
+        }
+    }
+
+    // console.log(one())
+    // console.log(one())
+
+</script>
+</body>
+</html>
