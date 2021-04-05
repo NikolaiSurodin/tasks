@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // null, undefined, boolean, symbol, string, number, object
+    // function say(name) {
+    //     const mess = 'Hello' + name
+    //     return function () {
+    //         console.log(mess)
+    //     }
+    // }
+    // const  helloO = say('Elena')
+    // console.log(helloO());
+
+    //    //замыкание
+    // function createFramework () {
+    //     const fw =['Angelar', 'Reakt']
+    //     return{
+    //         print: function (){
+    //             console.log(fw.join(' '))
+    //         },
+    //         add: function (framework){
+    //             fw.push(framework)
+    //         }
+    //     }
+    // }
+    // const manager = createFramework()
+    //    console.log(manager)
+    //    manager.print()
+    //    manager.add('Vue')
+    //    manager.print()
+
+
+    //setTimout
+
+    // const fib = [1, 2, 3, 42, 2]
+    // for (var i = 0; i<fib.length; i++){
+    //     (function (j){
+    //         setTimeout(() => {
+    //             console.log(`fib[${j}] = ${fib[j]}`)
+    //         }, 1500)
+    //     })(i)
+    // }
+
+    //context
+    // const person = {
+    //     surname: 'Stark',
+    //     knows: function (what, name) {
+    //         console.log(`Ты ${what} знаешь ${name} ${this.surname}`)
+    //     }
+    // }
+    // const jhon = {
+    //     surname: 'Сноу'
+    // }
+    // person.knows('все', 'Бран')
+    // person.knows.call(jhon, 'ничего', 'Джон')
+    // const a = person.knows.bind(jhon, 'ничего', 'Джон')
+    // a()
+
+    // function Person (name, age) {
+    //     this.name = name
+    //     this.age = age
+    //     console.log(this)
+    // }
+    // const elena = new Person("elend", 23)
+    //
+    // function logThis () {
+    //     console.log(this)
+    // }
+    // const obj = {
+    //     num:33
+    // }
+    // logThis.call(obj)
+    // logThis.bind(obj)()
+
+    //     function Cat (color) {
+    //         this.color = color
+    //         console.log('This', this);
+    //         (() => {console.log("arrr this", this)})()
+    //     }
+    // new Cat('res')
+
+    // const first = () => console.log('first')
+    // const second = () => console.log('second')
+    // const third = () => console.log('third')
+    // first()
+    // setTimeout(second, 0)
+    // third()
+
+</script>
+
+</body>
+</html>
